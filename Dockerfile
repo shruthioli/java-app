@@ -1,4 +1,4 @@
-FROM openjdk:21
+FROM openjdk:17
 WORKDIR /java-app-deployment
 COPY myprogram.java .
 RUN javac myprogram.java
