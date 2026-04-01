@@ -3,10 +3,11 @@ kind: Service
 metadata: 
  name: java-service
 spec:
+  type: Nodeport
   selector:
     app: java
   ports:
     - port: 80
       targetport: 8080
-  type: Nodeport
+      nodeport: 30007
 

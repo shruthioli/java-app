@@ -13,6 +13,8 @@ spec:
     app: java
   spec:
    containers:
-    - name: java
-      image: my-java-app:latest
+    - name: java-container
+      image: shruthioli/my-java-app:latest
+      ports:
+        - containerport: 8080
 
